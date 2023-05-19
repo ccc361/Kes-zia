@@ -1,0 +1,19 @@
+@media (max-width: 1920px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: black;
+        padding:10px;
+        z-index: 9999;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        margin-right: 10px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

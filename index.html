@@ -1,321 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Hydro colon</title>
-    <meta name="keywords" content="Berlin, Kreuzberg, natur, heilung, praxis, naturheilpraxis, massagen, hydro-colon-therapie, therapie, darm, spülung, heilfassten,"/>
-    <style>
-        /* Styles für Bildschirmgrößen kleiner als 768px */
-@media (max-width: 767px) {
-  /* Hier können Sie Ihre CSS-Stile für kleinere Bildschirme definieren */
-}
+    <meta name="keywords" content="Berlin, Kreuzberg, natur, heilung, praxis, naturheilpraxis, massagen, hydro-colon-therapie, therapie, darm, spülung, heilfassten,">
 
-/* Styles für Bildschirmgrößen zwischen 768px und 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Hier können Sie Ihre CSS-Stile für mittelgroße Bildschirme definieren */
-}
-
-/* Styles für Bildschirmgrößen größer als 992px */
-@media (min-width: 992px) {
-  /* Hier können Sie Ihre CSS-Stile für größere Bildschirme definieren */
-}
-/*.fancy-text3{
-  /*  font-family: "Helvetica", sans-serif; 
-  /*    font-style: italic; 
- /*     font-size: 20px; 
-/*}
-/*.fancy-text2{
- /*   font-family: "Helvetica", sans-serif; 
-  /*    font-style: italic; 
- /*     font-size: 20px; 
-/*
-/*.fancy-text{
-    font-family: "Helvetica", sans-serif; /* Hier kannst du die gewünschte Schriftart angeben */
-  /*    font-style: italic; /* Hier kannst du den gewünschten Stil angeben */
-    /*  font-size: 20px; /* Hier kannst du die gewünschte Schriftgröße angeben */
-
-.everything{
-    background-color: transparent;
-    padding: 0;
-    color:#fff
-}
-/* .white1{
-    background-color:transparent;
-            padding: 0;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            float: left;
-            width: 40%;
-            height: 500px;
-            overflow: auto;
-            margin-right: 20px;
-            margin-left: 100px;
-            margin-top: 110px;
-            font-size: 25px;
-            color:#ffffff;
-} */
-.A{
-    margin-top: 10%;
-}
-.white2{   
-background-color:transparent;
-            padding: 0;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            /* float: left; */
-            width: 40%;
-            height: 500px;
-            overflow: auto;
-            margin-right: 20px;
-            margin-left: 100px;
-            margin-top: 110px;
-            font-size: 25px;
-            color:#ffffff;
-}
-            
-        .navbar {
-            position:fixed;
-            top: 0;
-            right: 0; 
-            width: 100%;
-            background-color: black;
-            padding:10px;
-            z-index: 9999;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .navbar a {
-            margin-right: 10px;
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .home {
-            text-align: center;
-            
-        }
-        .about { 
-            text-align: center;
-            color:#fff;
-            margin-left: 70px;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            
-        }
-
-        .content-wrapper {
-            margin-top: 100px;
-        }
-
-        h1 {
-            margin-left: 35px;
-            margin-top: 20px;
-             text-shadow: 2px 2px 4px rgb(255, 250, 250);
-        }
-        h2 { 
-            margin-left: 35px;
-        }
-        .info-block {
-            background-color:transparent;
-            /* padding: 50px; */
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            /* float: left; */
-            width: 50%;
-            height: 500px;
-            overflow: auto;
-            margin-right: 20px;
-            margin-left: 70px;
-            margin-top: 110px;
-            font-size: 25px;
-            color:#ffffff;
-        }
-        
-
-        
-        .clear {
-            clear: both;
-        }
-
-
-        form {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 500px;
-            background-color: #f2f2f2;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        input[type=text],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            font-size: 16px;
-            color: #333;
-        }
-
-        input[type=submit] {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .appointment-box h2 {
-            text-align: center;
-            margin: 0;
-        }
-        #appointment-box {
-        margin-top: 100px;
-        padding-top: 20px;
-        background-color: #f2f2f2;
-        border-radius: 5px;
-        text-align: center;
-        
-    }
-
-            </style>
-            <script>
-                // JavaScript-Code zum Scrollen zu den jeweiligen Abschnitten
-                function scrollToSection(sectionId) {
-                    const section = document.getElementById(sectionId);
-                    if (section) {
-                        section.scrollIntoView({ behavior: "smooth" });
-                    }
-                }
-                
-
-            </script>
-
-    <div class="navbar">
-    <a href="javascript:void(0);" onclick="scrollToSection('home')">Home</a>
-    <a href="javascript:void(0);" onclick="scrollToSection('about')">Colon-Hydro</a>
-    <a href="javascript:void(0);" onclick="scrollToSection('darm')">Darm</a>
-    <a href="javascript:void(0);" onclick="scrollToSection('appointment-box')">Online-Buchung</a>
-</div>
-</head>
-<body>
-    <video id="video-background" autoplay loop muted>
-        <source src="vid1.mp4" type="video/mp4">
-    </video>
+    <!--scripts-->
+    <script src="scripts/scroll.js"></script>
     
-                                             <div class="A">
-    <div class="everything">
-        <h1>Colon-Hydro Berlin</h1>
-        <Strong><h1>Kes'zia</h1></Strong>
-        <h2>Praxis für Colon-Hydro Therapie</h2> 
-        <!-- <div class="content-wrapper"> -->
-        <div id="home" class="info-block">
-            <h1>Home</h1>
-            <p class="fancy-text">
-                Die meisten Menschen leiden an gestörter Symbiose-Störung der naturlichen Lebensgemeinschaft von Bakterien und Menschen.
-Meist durch sterilisierte und denaturierte Nahrungsmittel; Weissmehl, Kaffee, Zucker, zu wenig Ballaststoffe, Umweltbelastung, Nebenwirkung von Medikamenten. Fremdbakterien, Pilze und Parasiten siedeln sich an. 
-Über die Darmwand gelangen Giftstoffe in den Körper, die allgemeine Beschwerden wie Müdigkeit, Abgeschlagenheit, Kopf-, Muskel- und Gelenkschmerzen oder 
-Hautunreinheiten und Entzündungen bereiten können. Dies hat zu Folge, das zunehmende Nachlassen der Abwehrkräfte im Organismus. Die Schleimhaut des Dickdarms
- ist die erste und wichtigste, Verteigungssystem gegen Giftstoffe. Erst an zweiter Stelle folgen Leber, Niere, Lympe und die Hautoberfläche.
-
-Colon-Hydro Therapie:<br>
-Was ist die Colon-Hydro Threrapie?<br>
-Die Colon-Hydro Therapie ist eine alternativmedizinisches Verfahren zur Spülung des Dickdarms.
-Sie zielt darauf ab, den Dickdarm von fest sitzenden Stuhlresten zu befreien. Eine Darmreinigung unterstützt die Heilung und bietet effektiven Schutz vor vielen Beschwerden.
-            </p>
-        </div>
-        <!-- </div> -->    
-        <div id="about" class="info-block"> <!-- style="height: 800px; width: 50%; background-color: transparent;" -->
-            <h1>Colon-Hydro Therapie</h1>
-            <p class="fancy-text2">Was ist die Colon-Hydrotherapie?<br>
-                Die Colon-Hydrotherapie ist ein alternativmedizinisches Verfahren zur Spülung des Dickdarms.
-                Sie zielt darauf ab, den Dickdarm von fest sitzenden Stuhlresten zu befreien. Eine Darmreinigung unterstützt die Heilung und bietet effektiven Schutz vor vielen Beschwerden.
-                <br><br>
-                Wie funktioniert die Colon-Hydrotherapie?<br>
-                Bei der Colon-Hydro-Behandlung wird durch ein Kunststoffröhrchen Wasser 
-                in den Dickdarm eingeführt, um diesen von Gift- und Abfallstoffen zu befreien.
-                Anschließend wird das Wasser samt gelöstem Darminhalt geruchlos über einen Abflussschlauch abgeleitet.
-                Unterstützend führt der Therapeut bzw. die Therapeutin eine sanfte Bauchdeckenmassage durch.
-                Die Behandlung dauert ca. 60 Minuten.
-                Je nach Art und Umfang der Beschwerden kann die Therapie insgesamt zwischen 7 und 15 Sitzungen umfassen.
-                <br><br>
-                Wozu ist die Colon-Hydrotherapie gut?<br>
-                Anwendungsgebiete:
-                Reizdarm, Verstopfungen, chronischer Durchfall, Blähungen, Völlegefühl, Morbus Crohn,
-                Kopfschmerzen, Migräne,
-                Hauterkrankungen, Akne, Schuppenflechte,
-                Gelenkbeschwerden, Arthritis, Arthrose, Rheuma, Polyarthritis,
-                Depressionen, Burn-out,
-                Allergien, Müdigkeit, Infektionen, Entzündungen, hoher Blutdruck.
-                <br><br>
-                Wer darf keine Colon-Hydrotherapie?<br>
-                Kontraindikation:
-                Herz-Kreislauf-Beschwerden, Herzinfarkt, Darmoperation, Schwangerschaft, Angina pectoris (Schmerz in der Brust), akute Entzündungsprozesse im Magen-Darm-Trakt, Tumore im Darmbereich.
-            </p>               
-        </div>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/index.css">
     
-        <div id="darm" class="info-block"> <!-- style="height: 800px; width:50%; background-color: transparent;" -->
-            <h1>Darm</h1>
-            <p class="fancy-text3">Der Darm ist ein gewundener Muskelschlauch, der vom Magen bis zum After reicht. 
-                Seine Hauptaufgabe ist die Nahrung zu verdauen. Im Darm werden aber auch verschiedene Hormone produziert. 
-                Außerdem spielt er eine wichtige Rolle bei der Abwehr von Krankheitserregern und der Aufnahme und Abgabe von Wasser. 
-                Die Darmwand enthält viele Nerven. Bei manchen Menschen beeinflusst ihre seelische Verfassung den Darm. Sie bekommen Bauchschmerzen,
-                Durchfall oder Verstopfungen, wenn sie gestresst sind oder sich über etwas ärgern.
-                <br><br>
-                Der Dünndarm (3-6 Meter lang)<br>
-                Im Dünndarm zerlegen Enzyme (Fermente) Nahrungsbestandteile wie Kohlenhydrate, Eiweiße oder Fette in ihre Einzelteile, 
-                also in Zucker, Aminosäuren und Fettsäuren. Die Enzyme werden in den Speicheldrüsen im Mund, im Magen und in der Bauchspeicheldrüse
-                gebildet und als Verdauungssäfte in den Darm abgegeben. Hinzu kommen Gallenflüssigkeit und Darmsekret. Sie erleichtern den Enzymen das 
-                Zerlegen der Nahrung. Außerdem geben Magen und Darm Schleim ab, der verhindert, dass die Enzyme die Schleimhäute angreifen. Da dem Speisebrei
-                mit verschiedenen Verdauungssäften und Schleim viel Wasser beigemischt wird, ist er im Dünndarm sehr flüssig. Die Wand des Dünndarms nimmt vor 
-                allem die Nahrungsbestandteile, Vitamine und Salze auf. Von dort gelangen die Nährstoffe in das Blut und in alle Organe des Körpers. 
-                In der Wand des Dünndarms werden außerdem verschiedene Hormone hergestellt. Die Hormone regen unter anderem die Produktion von Galle 
-                und Bauchspeicheldrüsensaft an. Dadurch wird noch mehr Wasser in den Darm abgegeben. Außerdem lösen die Hormone im Gehirn ein Sättigungsgefühl aus.
-                <br><br>
-                Dickdarm (1-1,5 Meter lang)<br>
-                Im rechten Unterbauch mündet der Dünndarm in den Dickdarm. Dieser besteht aus Blinddarm (Caecum) mit Wurmfortsatz (Appendix), 
-                Grimmdarm (Colon) und Mastdarm (Rektum), der mit dem Analkanal am After endet. Dem flüssigen Nahrungsbrei wird im Dickdarm das Wasser 
-                zusammen mit Salzen entzogen. Dadurch wird der Darminhalt zu Stuhl eingedickt. Gleichzeitig befördert die Dickdarm-Muskulatur den Darminhalt 
-                in kräftigen, wellenförmigen Bewegungen in Richtung Darmausgang. Ist der Stuhl in das Rektum gelangt, löst das den Drang aus, zur Toilette zu 
-                gehen und den Darm zu entleeren. Wenn man nicht direkt zur Toilette geht, speichert das Rektum den Stuhl. Die Häufigkeit des Stuhlgangs ist 
-                individuell und sehr unterschiedlich. Manche Menschen gehen dreimal täglich auf die Toilette, andere nur dreimal pro Woche. Beides ist völlig normal. Die Häufigkeit hängt davon ab, wie ballaststoffreich die Nahrung ist. Weitere wichtige Aufgaben des Dickdarms sind die Aufnahme und Produktion von Vitaminen. Dazu wird die genannte Darmflora benötigt. Sie besteht aus Milliarden von Bakterien, die unter anderem von den unverdaulichen Bestandteilen der Nahrung leben. Dabei produzieren sie die lebenswichtigen Vitamine B und K. Außerdem schützt die Darmflora davor, dass sich andere schädliche Bakterien im Darm ansiedeln und vermehren.
-            </p>
+    
+    <head>
+        
+        <!--rest-->
+        <title>Hydro colon</title>
+        
+        <div class="navbar">
+            <a href="javascript:void(0);" onclick="scrollToSection('home')">Home</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('about')">Colon-Hydro</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('darm')">Darm</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('appointment-box')">Online-Buchung</a>
         </div>
-    </div>
+    </head>
 
-    <div class="clear"></div>
-        <div id="appointment-box" class="appointment-box"></div>
+    <body>
+        <div class="container"></div>
+        <div>
+            <div id="home" class="info-block">
+                <p>
+                    Die meisten Menschen leiden an gestörter Symbiose-Störung der naturlichen Lebensgemeinschaft von Bakterien und Menschen. 
+                    Meist durch sterilisierte und denaturierte Nahrungsmittel; Weissmehl, Kaffee, Zucker, zu wenig Ballaststoffe, Umweltbelastung, Nebenwirkung von Medikamenten. Fremdbakterien, Pilze und Parasiten siedeln sich an. 
+                    Über die Darmwand gelangen Giftstoffe in den Körper, die allgemeine Beschwerden wie Müdigkeit, Abgeschlagenheit, Kopf-, Muskel- und Gelenkschmerzen oder 
+                    Hautunreinheiten und Entzündungen bereiten können. Dies hat zu Folge, das zunehmende Nachlassen der Abwehrkräfte im Organismus. Die Schleimhaut des Dickdarms 
+                    ist die erste und wichtigste, Verteigungssystem gegen Giftstoffe. Erst an zweiter Stelle folgen Leber, Niere, Lympe und die Hautoberfläche.
+                </p>
+            </div>
+
+
+            <div id="about" class="info-block">
+                <p>Was ist die Colon-Hydrotherapie?<br>
+                    Die Colon-Hydrotherapie ist ein alternativmedizinisches Verfahren zur Spülung des Dickdarms.
+                    Sie zielt darauf ab, den Dickdarm von fest sitzenden Stuhlresten zu befreien. Eine Darmreinigung unterstützt die Heilung und bietet effektiven Schutz vor vielen Beschwerden.
+                    <br><br>
+                    Wie funktioniert die Colon-Hydrotherapie?<br>
+                    Bei der Colon-Hydro-Behandlung wird durch ein Kunststoffröhrchen Wasser 
+                    in den Dickdarm eingeführt, um diesen von Gift- und Abfallstoffen zu befreien.
+                    Anschließend wird das Wasser samt gelöstem Darminhalt geruchlos über einen Abflussschlauch abgeleitet.
+                    Unterstützend führt der Therapeut bzw. die Therapeutin eine sanfte Bauchdeckenmassage durch.
+                    Die Behandlung dauert ca. 60 Minuten.
+                    Je nach Art und Umfang der Beschwerden kann die Therapie insgesamt zwischen 7 und 15 Sitzungen umfassen.
+                    <br><br>
+                    Wozu ist die Colon-Hydrotherapie gut?<br>
+                    Anwendungsgebiete:
+                    Reizdarm, Verstopfungen, chronischer Durchfall, Blähungen, Völlegefühl, Morbus Crohn,
+                    Kopfschmerzen, Migräne,
+                    Hauterkrankungen, Akne, Schuppenflechte,
+                    Gelenkbeschwerden, Arthritis, Arthrose, Rheuma, Polyarthritis,
+                    Depressionen, Burn-out,
+                    Allergien, Müdigkeit, Infektionen, Entzündungen, hoher Blutdruck.
+                    <br><br>
+                    Wer darf keine Colon-Hydrotherapie?<br>
+                    Kontraindikation:
+                    Herz-Kreislauf-Beschwerden, Herzinfarkt, Darmoperation, Schwangerschaft, Angina pectoris (Schmerz in der Brust), akute Entzündungsprozesse im Magen-Darm-Trakt, Tumore im Darmbereich.
+                </p>
+            </div>
+
+            <div id="darm" class="info-block">
+                <p>Der Darm ist ein gewundener Muskelschlauch, der vom Magen bis zum After reicht. 
+                    Seine Hauptaufgabe ist die Nahrung zu verdauen. Im Darm werden aber auch verschiedene Hormone produziert. 
+                    Außerdem spielt er eine wichtige Rolle bei der Abwehr von Krankheitserregern und der Aufnahme und Abgabe von Wasser. 
+                    Die Darmwand enthält viele Nerven. Bei manchen Menschen beeinflusst ihre seelische Verfassung den Darm. Sie bekommen Bauchschmerzen,
+                    Durchfall oder Verstopfungen, wenn sie gestresst sind oder sich über etwas ärgern.
+                    <br><br>
+                    Der Dünndarm (3-6 Meter lang)<br>
+                    Im Dünndarm zerlegen Enzyme (Fermente) Nahrungsbestandteile wie Kohlenhydrate, Eiweiße oder Fette in ihre Einzelteile, 
+                    also in Zucker, Aminosäuren und Fettsäuren. Die Enzyme werden in den Speicheldrüsen im Mund, im Magen und in der Bauchspeicheldrüse
+                    gebildet und als Verdauungssäfte in den Darm abgegeben. Hinzu kommen Gallenflüssigkeit und Darmsekret. Sie erleichtern den Enzymen das 
+                    Zerlegen der Nahrung. Außerdem geben Magen und Darm Schleim ab, der verhindert, dass die Enzyme die Schleimhäute angreifen. Da dem Speisebrei
+                    mit verschiedenen Verdauungssäften und Schleim viel Wasser beigemischt wird, ist er im Dünndarm sehr flüssig. Die Wand des Dünndarms nimmt vor 
+                    allem die Nahrungsbestandteile, Vitamine und Salze auf. Von dort gelangen die Nährstoffe in das Blut und in alle Organe des Körpers. 
+                    In der Wand des Dünndarms werden außerdem verschiedene Hormone hergestellt. Die Hormone regen unter anderem die Produktion von Galle 
+                    und Bauchspeicheldrüsensaft an. Dadurch wird noch mehr Wasser in den Darm abgegeben. Außerdem lösen die Hormone im Gehirn ein Sättigungsgefühl aus.
+                    <br><br>
+                    Dickdarm (1-1,5 Meter lang)<br>
+                    Im rechten Unterbauch mündet der Dünndarm in den Dickdarm. Dieser besteht aus Blinddarm (Caecum) mit Wurmfortsatz (Appendix), 
+                    Grimmdarm (Colon) und Mastdarm (Rektum), der mit dem Analkanal am After endet. Dem flüssigen Nahrungsbrei wird im Dickdarm das Wasser 
+                    zusammen mit Salzen entzogen. Dadurch wird der Darminhalt zu Stuhl eingedickt. Gleichzeitig befördert die Dickdarm-Muskulatur den Darminhalt 
+                    in kräftigen, wellenförmigen Bewegungen in Richtung Darmausgang. Ist der Stuhl in das Rektum gelangt, löst das den Drang aus, zur Toilette zu 
+                    gehen und den Darm zu entleeren. Wenn man nicht direkt zur Toilette geht, speichert das Rektum den Stuhl. Die Häufigkeit des Stuhlgangs ist 
+                    individuell und sehr unterschiedlich. Manche Menschen gehen dreimal täglich auf die Toilette, andere nur dreimal pro Woche. Beides ist völlig normal. Die Häufigkeit hängt davon ab, wie ballaststoffreich die Nahrung ist. Weitere wichtige Aufgaben des Dickdarms sind die Aufnahme und Produktion von Vitaminen. Dazu wird die genannte Darmflora benötigt. Sie besteht aus Milliarden von Bakterien, die unter anderem von den unverdaulichen Bestandteilen der Nahrung leben. Dabei produzieren sie die lebenswichtigen Vitamine B und K. Außerdem schützt die Darmflora davor, dass sich andere schädliche Bakterien im Darm ansiedeln und vermehren.
+                </p>
+            </div>
+        </div>
+
+        <div id="appointment-box" class="appointment-box">
             <h2>Online Buchung </h2> 
-            <form action="" method="POST">
+                <form action="" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" required>
                 <label for="email">E-Mail-Adresse:</label>
@@ -331,7 +113,5 @@ Sie zielt darauf ab, den Dickdarm von fest sitzenden Stuhlresten zu befreien. Ei
                 <input type="submit" value="Terminbuchung abschicken">
             </form>
         </div>
-    </div>
-                                                </div>
-</body>
+    </body>
 </html>
